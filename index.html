@@ -635,7 +635,7 @@
         สาขาวิชาบริหารการศึกษา ปีการศึกษา 2569<br>
         ใช้เวลาเพียง 2–3 นาที
       </div>
-      <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="cta-btn">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSerK3rCazYkqVPgo0XGFolGZoEjXcgA8DaQdaiqnR0fSW8dCA/viewform" target="_blank" class="cta-btn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
         </svg>
@@ -763,7 +763,7 @@ function filterTable(q) {
 async function loadData() {
   document.getElementById('footerText').textContent = 'กำลังโหลดข้อมูล...';
   try {
-    const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json`;
+    const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&headers=1`;
     const res = await fetch(url);
     const text = await res.text();
     // gviz wraps JSON in /*O_o*/\ngoogle.visualization.Query.setResponse(...)
